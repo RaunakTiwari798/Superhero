@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -7,7 +6,7 @@ const Constraint = Matter.Constraint;
 
 function preload()
 {
-	backgroundImage = loadImage("images/GamingBackground.png");
+	backgroundImage = loadImage("images/GamingBackground-01.png");
 }
 
 function setup() {
@@ -19,7 +18,7 @@ function setup() {
 
 	//Create the Bodies Here.
   ground = new Ground (200, 400, 600, 5);
-  superhero= new Superhero(400,3,100,100);
+  superhero = new Superhero(400,3,100,100);
   attach=new Throw(superhero.body,{x:100,y:465});
   block1 = new Block(280,350,30,40);  
   block2 = new Block(310,350,30,40);
